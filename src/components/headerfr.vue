@@ -29,9 +29,9 @@
     <nav class="menu">
       <ul>
         <li><router-link to="/"><img src="https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/logo_dark.svg" alt="FinFish"></router-link></li>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/story">Story</router-link></li>
-        <li><router-link to="/offf">OFFF</router-link></li>
+        <li><router-link to="/fr">Accueil</router-link></li>
+        <li><router-link to="/fr/story">À Propos</router-link></li>
+        <li><router-link to="/fr/offf">OFFF</router-link></li>
         <li>
           <div class="langue">
             <router-link to="/">EN</router-link>
@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "heading"
+  name: "headingfr"
 }
 </script>
 
@@ -132,7 +132,7 @@ header {
         &:first-child {
           margin-top: 150px;
           @media screen and (min-width: 800px) {
-            flex-basis: 30%;
+            flex-basis: 17%;
             margin-top: 0;
             order: 4;
             margin-left: auto;

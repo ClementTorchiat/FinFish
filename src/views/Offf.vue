@@ -5,7 +5,9 @@
 </template>
 
 <script>
-
+export default {
+  name: "OFFF"
+}
 </script>
 
 <style scoped lang="less">

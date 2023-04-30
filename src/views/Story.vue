@@ -5,7 +5,9 @@
 </template>
 
 <script>
-
+export default {
+  name: "Story"
+}
 </script>
 
 <style scoped lang="less">
