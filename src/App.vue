@@ -14,6 +14,6 @@
 
 <style lang="css">
 body {
-  background-color: #ADD6FF;
+  background-color: #96CAFF;
 }
 </style>
