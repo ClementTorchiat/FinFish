@@ -146,6 +146,7 @@ export default {
       margin-top: 40px;
       @media screen and (min-width: 800px) {
         width: 576px;
+        height: fit-content;
         margin-top: 0;
       }
     }
