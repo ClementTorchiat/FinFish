@@ -24,8 +24,7 @@ export default {
 footer {
   overflow-x: hidden;
   height: 122px;
-  background-image: url("https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/footer.png");
-  background-size: cover;
+  background-color: #051525;
   display: flex;
   padding: 5px 25px;
   align-items: center;
