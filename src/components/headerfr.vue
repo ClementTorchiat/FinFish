@@ -4,14 +4,14 @@
       <defs>
         <filter id="gooeyness">
           <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"/>
           <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
         </filter>
       </defs>
     </svg>
-    <router-link to="/"><img src="https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/logo_dark.svg" alt="FinFish" class="logo_header_mobile"></router-link>
+    <router-link to="/fr"><img src="https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/logo_dark.svg" alt="FinFish" class="logo_header_mobile"></router-link>
     <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
-      <div class="plate" onclick="this.classList.toggle('active')">
+      <div class="plate" id="mobile-toggle" onclick="this.classList.toggle('active')">
         <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
           <path class="line line1" d="M 50,65 H 70 C 70,65 75,65.198488 75,70.762712 C 75,73.779026 74.368822,78.389831 66.525424,78.389831 C 22.092231,78.389831 -18.644068,-30.508475 -18.644068,-30.508475" />
           <path class="line line2" d="M 50,35 H 70 C 70,35 81.355932,35.300135 81.355932,25.635593 C 81.355932,20.906215 78.841706,14.830508 72.881356,14.830508 C 35.648232,14.830508 -30.508475,84.322034 -30.508475,84.322034" />
@@ -28,11 +28,11 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><router-link to="/"><img src="https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/logo_dark.svg" alt="FinFish"></router-link></li>
-        <li><router-link to="/fr">Accueil</router-link></li>
-        <li><router-link to="/fr/story">À Propos</router-link></li>
-        <li><router-link to="/fr/offf">OFFF</router-link></li>
-        <li>
+        <li onclick="document.getElementById('mobile-toggle').classList.toggle('active'); document.documentElement.classList.toggle('menu-open')"><router-link to="/fr"><img src="https://finfish.clement-torchiat.fr/wp-content/uploads/2023/04/logo_dark.svg" alt="FinFish"></router-link></li>
+        <li onclick="document.getElementById('mobile-toggle').classList.toggle('active'); document.documentElement.classList.toggle('menu-open')"><router-link to="/fr">Accueil</router-link></li>
+        <li onclick="document.getElementById('mobile-toggle').classList.toggle('active'); document.documentElement.classList.toggle('menu-open')"><router-link to="/fr/story">À Propos</router-link></li>
+        <li onclick="document.getElementById('mobile-toggle').classList.toggle('active'); document.documentElement.classList.toggle('menu-open')"><router-link to="/fr/offf">OFFF</router-link></li>
+        <li onclick="document.getElementById('mobile-toggle').classList.toggle('active'); document.documentElement.classList.toggle('menu-open')">
           <div class="langue">
             <router-link to="/">EN</router-link>
             <router-link to="/fr">FR</router-link>
