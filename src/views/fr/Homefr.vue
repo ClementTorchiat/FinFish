@@ -188,7 +188,7 @@ export default {
   text-align: center;
   margin-top: 290px;
   @media screen and (min-width: 800px) {
-    margin-top: 300px;
+    margin-top: 180px;
   }
 }
 
